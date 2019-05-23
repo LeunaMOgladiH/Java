@@ -7,9 +7,9 @@ public class Uso_Coche {
 		
 		Coche Renault=new Coche();
 		
-		Renault.establece_color();
+		Renault.establece_color("marron");
 		
-		System.out.println(Renault.dame_largo());
+		System.out.println(Renault.dame_datos());
 		
 		System.out.println(Renault.dame_color());
 
