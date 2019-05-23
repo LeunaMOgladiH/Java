@@ -52,7 +52,7 @@ public class Coche {
 
 	public void config_asientos(String asientos_cuero) {
 
-		if (asientos_cuero == "si") {
+		if (asientos_cuero.equalsIgnoreCase("si")) { //Siempre para comparar cadenas strings hay que usar siempre equalsIgnoreCase
 			this.asientos_cuero = true;
 		} else {
 			this.asientos_cuero = false;
@@ -60,69 +60,69 @@ public class Coche {
 		; // a las variables se le pone this. para distinguirlos
 
 	}
-	
+
 	public String dame_asiento() {
-		
-		if (asientos_cuero==true) {
-			
+
+		if (asientos_cuero == true) {
+
 			return "El auto lleva asiento de cuero";
-		}else {
-			
+		} else {
+
 			return "El auto no lleva asiento de cuero";
 		}
 	}
 
 	public void config_climatiza(String climatizador) {
 
-		if (climatizador == "si") {
+		if (climatizador.equalsIgnoreCase("si")) {
 
 			this.climatizador = true;
 		} else {
 			this.climatizador = false;
 		}
 	}
-	
+
 	public String dame_climatiza() {
-		
-		if(climatizador==true) {
-			
+
+		if (climatizador == true) {
+
 			return "El coche incorpora climatizador";
-		}else {
+		} else {
 			return "El coche incorpora aire acondicionado";
 		}
 	}
-	
-	public String dame_peso() { //Tratar de no hacerlo, es un GETTER y SETTER combinado.
-		
-		int peso_carroceria=500;
-		
-		peso_total=peso_plataforma+peso_carroceria;
-		
-		if (asientos_cuero==true) {
-			
-			peso_total+=50;
+
+	public String dame_peso() { // Tratar de no hacerlo, es un GETTER y SETTER combinado.
+
+		int peso_carroceria = 500;
+
+		peso_total = peso_plataforma + peso_carroceria;
+
+		if (asientos_cuero == true) {
+
+			peso_total += 50;
 		}
-		if (climatizador==true) {
-			
-			peso_total+=20;
+		if (climatizador == true) {
+
+			peso_total += 20;
 		}
-		
-		return "El peso total del coche es "+peso_total+" kg";
+
+		return "El peso total del coche es " + peso_total + " kg";
 	}
-	
+
 	public int dame_precio() {
-		
-		int preciofinal=10000;
-		
-		if (asientos_cuero==true) {
-			
-			preciofinal+=2000;
+
+		int preciofinal = 10000;
+
+		if (asientos_cuero == true) {
+
+			preciofinal += 2000;
 		}
-		if(climatizador==true) {
-			
-			preciofinal+=1500;
+		if (climatizador == true) {
+
+			preciofinal += 1500;
 		}
-		
+
 		return preciofinal;
 	}
 

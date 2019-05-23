@@ -1,5 +1,7 @@
 package tema27;
 
+import javax.swing.JOptionPane;
+
 public class Uso_Coche {
 
 	public static void main(String[] args) {
@@ -7,11 +9,11 @@ public class Uso_Coche {
 		
 		Coche Renault=new Coche();
 		
-		Renault.establece_color("marron");
+		Renault.establece_color(JOptionPane.showInputDialog("Introduce el color: "));
 		
-		Renault.config_climatiza("si");
+		Renault.config_climatiza(JOptionPane.showInputDialog("Desea Climatizador, Si o No: "));
 		
-		Renault.config_asientos("no");
+		Renault.config_asientos(JOptionPane.showInputDialog("Desea asiento de cuero, Si o No: "));
 		
 		System.out.println(Renault.dame_datos());
 		
