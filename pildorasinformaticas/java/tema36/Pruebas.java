@@ -11,9 +11,7 @@ public class Pruebas {
 		
 		trab1.cambiaSeccion("RRHH");
 		
-		System.out.println(trab1.devuelveDatos());
-		System.out.println(trab2.devuelveDatos());
-		System.out.println(trab3.devuelveDatos());
+		System.out.println(trab1.devuelveDatos()+"\n"+trab2.devuelveDatos()+"\n"+trab3.devuelveDatos()+"\n"+Empleados.dameidsig());
 	}
 	
 }

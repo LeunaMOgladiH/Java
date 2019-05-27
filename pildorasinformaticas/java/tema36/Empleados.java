@@ -30,5 +30,10 @@ public class Empleados {
 		
 		return "El nombre es "+nom+" y la seccion es "+seccion+" y el Id "+id;
 	}
+	
+	public static String dameidsig() {
+		
+		return "El Id siguiente: "+idsig;
+	}
 
 }

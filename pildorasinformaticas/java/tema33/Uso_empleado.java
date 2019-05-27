@@ -26,7 +26,7 @@ public class Uso_empleado {
 		
 		for(Empleado e:misEmpleados){
 			
-			e.subesueldo(5);;
+			e.subesueldo(5);
 			
 		}
 		
