@@ -8,11 +8,18 @@ public class Empleados {
 		
 		seccion="Administracion";
 		
+		id=idsig;
+		idsig++;
+		
 	}
 	
 	private final String nom; //final creara de la variable nom una constante invariable
 	
 	private String seccion;
+	
+	private int id;
+	
+	private static int idsig=1;
 	
 	public void cambiaSeccion(String seccion) {
 		
@@ -21,7 +28,7 @@ public class Empleados {
 	
 	public String devuelveDatos() {
 		
-		return "El nombre es "+nom+" y la seccion es "+seccion;
+		return "El nombre es "+nom+" y la seccion es "+seccion+" y el Id "+id;
 	}
 
 }
