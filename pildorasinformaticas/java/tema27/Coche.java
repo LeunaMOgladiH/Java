@@ -35,8 +35,8 @@ public class Coche {
 
 	public String dame_datos() { // GETTER
 
-		return "La longitud del coche es " + largo / 1000 + " m, tiene " + ruedas + " ruedas, un ancho de "
-				+ ancho / 100 + " m, un motor de " + motor + "  cc y un peso de plataforma " + peso_plataforma + "kg";
+		return "La longitud del vehiculo es " + largo / 1000 + " m, tiene " + ruedas + " ruedas, un ancho de "
+				+ ancho / 100 + " m, un motor de " + motor + "cc y un peso de plataforma " + peso_plataforma + "kg";
 
 	}
 
