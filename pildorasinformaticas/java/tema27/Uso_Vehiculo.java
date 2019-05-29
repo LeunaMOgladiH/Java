@@ -33,7 +33,7 @@ public class Uso_Vehiculo {
 		 * );
 		 */ // Pertenece al tema 27
 
-		Coche micoche1 = new Coche();
+		Vehiculo micoche1 = new Vehiculo();
 		
 		micoche1.establece_color("Rojo");
 		

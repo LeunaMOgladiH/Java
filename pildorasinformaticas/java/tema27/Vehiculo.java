@@ -1,6 +1,6 @@
 package tema27;
 
-public class Coche {
+public class Vehiculo {
 
 	private int ruedas;
 
@@ -20,7 +20,7 @@ public class Coche {
 
 	private boolean climatizador;
 
-	public Coche() {
+	public Vehiculo() {
 
 		ruedas = 4;
 

@@ -1,8 +1,8 @@
 package tema40;
 
-import tema27.Coche; //tenemos que importar Coche para poder usar la extension 
+import tema27.Vehiculo; //tenemos que importar Coche para poder usar la extension 
 
-public class Furgoneta extends Coche { // Furgoneta es la clase HIJO de Coche y por tanto hereda todas las
+public class Furgoneta extends Vehiculo { // Furgoneta es la clase HIJO de Coche y por tanto hereda todas las
 										// caracteristicas de Coche que es la clase PADRE
 
 	private int capacidad_carga;
