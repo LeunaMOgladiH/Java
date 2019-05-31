@@ -18,7 +18,7 @@ public class Jefatura extends Trabajador{
 
 		public double damesueldo() {
 
-			double sueldoJefe = super.damesueldo();
+			double sueldoJefe = super.damesueldo(); //
 
 			return sueldoJefe + incentivo;
 		}
