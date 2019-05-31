@@ -1,13 +1,19 @@
 package tema39;
 
+import java.security.IdentityScope;
 import java.util.Date;
 import java.util.GregorianCalendar;
+
+import tema36.Empleados;
+import tema42.Jefatura;
 
 public class Trabajador {
 
 	private String nom;
 	private double sue;
 	private Date altacontrato;
+	private int id;
+	private static int idsig=1;
 
 	public Trabajador(String nom, double sue, int agno, int mes, int dia) {
 
@@ -17,6 +23,9 @@ public class Trabajador {
 		GregorianCalendar calendario = new GregorianCalendar(agno, mes - 1, dia);
 
 		altacontrato = calendario.getTime();
+		id=idsig;
+		++idsig;
+
 	}
 
 	public Trabajador(String nom) {
@@ -31,7 +40,7 @@ public class Trabajador {
 
 	public String damenombre() {
 
-		return nom;
+		return nom+" Id: "+id;
 	}
 
 	public double damesueldo() {
@@ -51,30 +60,6 @@ public class Trabajador {
 
 		sue += aumento;
 	}
-
-	class Jefatura extends Trabajador {
-
-		public Jefatura(String nom, double sue, int agno, int mes, int dia) {
-
-			super(nom, sue, agno, mes, dia); // al ser un constructor con parametros, debemos llamar al constructor
-												// PADRE con los parametros que queremos pasar
-
-		}
-
-		public void estableceIncentivo(double b) {
-
-			incentivo = b;
-		}
-
-		public double damesueldo() {
-
-			double sueldoJefe = super.damesueldo();
-
-			return sueldoJefe + incentivo;
-		}
-
-		private double incentivo;
-
-	}
+	
 
 }
