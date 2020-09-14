@@ -27,7 +27,7 @@ class MarcoBotones extends JFrame{
 		
 		setTitle("Botones y Eventos");
 		
-		setBounds (700,300,500,300);
+		setBounds (700,300,500,3001);
 		
 		LaminaBotones milamina=new LaminaBotones();
 		
@@ -59,7 +59,20 @@ class LaminaBotones extends JPanel implements ActionListener{
 	}
 	
 	public void actionPerformed(ActionEvent e) {
+		
+		Object BotonPulsado=e.getSource();
+		
+		if(BotonPulsado==botonAzul) {
 	
-		setBackground(Color.blue);
+			setBackground(Color.blue);
+		}
+		else if (BotonPulsado==botonRojo) {
+			
+			setBackground(Color.red);
+		}
+		else {
+			
+			setBackground(Color.yellow);
+		}
 	} 
 }
