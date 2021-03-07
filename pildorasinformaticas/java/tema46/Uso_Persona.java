@@ -44,7 +44,7 @@ class Empleado2 extends Persona{
 	
 	public String dameDescripcion() {
 		
-		return "Este empleado tiene un Id: "+Id+" con un sueldo de: "+sueldo
+		return "Este empleado tiene un Id: "+Id+" con un sueldo de: "+sueldo;
 	}
 	
 	public double dameSueldo() {
