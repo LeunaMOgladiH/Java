@@ -1,5 +1,7 @@
 package tema33;
 
+import tema42.Jefatura;
+
 public class Uso_empleado {
 
 	public static void main(String[] args) {
@@ -17,6 +19,8 @@ public class Uso_empleado {
 		System.out.println("Nombre: "+empleado1.damenombre()+" Sueldo: "+empleado1.damesueldo()+" Fecha de alta: "+empleado1.damecontrato());
 		System.out.println("Nombre: "+empleado2.damenombre()+" Sueldo: "+empleado2.damesueldo()+" Fecha de alta: "+empleado2.damecontrato());
 		System.out.println("Nombre: "+empleado3.damenombre()+" Sueldo: "+empleado3.damesueldo()+" Fecha de alta: "+empleado3.damecontrato());*/
+		
+		Jefatura jefe_RRHH=new Jefatura("Manuel Hidalgo", 55000, 1985, 3, 25);
 		
 		Empleado[] misEmpleados=new Empleado[3];
 		
