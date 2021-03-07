@@ -32,6 +32,7 @@ class MarcoBotones extends JFrame{
 		LaminaBotones milamina=new LaminaBotones();
 		
 		add(milamina);
+
 	}
 }
 
