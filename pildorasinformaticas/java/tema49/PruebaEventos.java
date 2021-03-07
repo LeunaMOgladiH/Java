@@ -1,4 +1,4 @@
-package graficos;
+package tema49;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
