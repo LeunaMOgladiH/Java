@@ -7,7 +7,28 @@ import java.util.GregorianCalendar;
 import tema36.Empleados;
 import tema42.Jefatura;
 
-public class Trabajador {
+// Al implementar en el tema 49 la interfaz de Array.sort, tenemos que construir el metodo CompareTo
+public class Trabajador implements Comparable{
+	
+	public int compareTo(Object miObjeto) {
+		
+	//Tenemos que hacer un CASTING o REFUNDICION para poder comparar sueldos,Id, etc... de empleados
+		
+		Trabajador otroTrabajador=(Trabajador) miObjeto;
+		
+		if(this.id<otroTrabajador.id) {
+			
+			return -1;
+		}
+		
+		if(this.id>otroTrabajador.id) {
+			
+			return 1;
+		}
+		
+		return 0;
+
+	}
 
 	private String nom;
 	private double sue;

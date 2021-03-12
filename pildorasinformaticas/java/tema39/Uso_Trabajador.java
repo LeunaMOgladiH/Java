@@ -1,5 +1,7 @@
 package tema39;
 
+import java.util.Arrays;
+
 import tema42.Jefatura;
 
 public class Uso_Trabajador {
@@ -33,6 +35,13 @@ public class Uso_Trabajador {
 			e.subesueldo(5);
 			 
 		}
+		
+		//Tema49 uso de Interfaces, vamos a ordendar el Array de datos de modos ascendente mediante el interface
+		// SORT, como es un abstracto la forma de llamarlo es mediante el metodo y despues el interface: Arrays.sort
+		//Ademas para que haga un casteo de esta interfaz devemos implementar el interfaz COMPARABLE el metodo en la clase Trabajador,
+		
+		
+		Arrays.sort(misTrabajadores);
 		
 		for(Trabajador e:misTrabajadores) {
 			
