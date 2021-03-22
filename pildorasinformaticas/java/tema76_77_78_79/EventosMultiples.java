@@ -1,4 +1,4 @@
-package tema76_77_78;
+package tema76_77_78_79;
 
 import java.awt.Color;
 import java.awt.Image;
