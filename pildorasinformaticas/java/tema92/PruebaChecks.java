@@ -1,0 +1,10 @@
+package tema92;
+
+public class PruebaChecks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
