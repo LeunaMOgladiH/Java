@@ -13,7 +13,7 @@ public class Clase2 {
 		
 		Clase3 miobj2=new Clase3();
 		
-		miobj2.mivar2 //Siempre heredamos de la clase Object pues es la clase mas alta de la cadena
+		miobj2.mivar2; //Siempre heredamos de la clase Object pues es la clase mas alta de la cadena
 
 	}
 	
