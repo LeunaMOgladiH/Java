@@ -42,7 +42,7 @@ class Banco{
 		
 	}
 	
-	public void transferencia(int cuentaOrigen,int cuentaDestino,double cantidad) {
+	public void transferencia(int cuentaOrigen,int cuentaDestino,double cantidad) throws InterruptedException {
 		
 		cierreBanco.lock();
 		
@@ -54,7 +54,7 @@ class Banco{
 			
 			//return; //Si el Hilo no tiene dinero para ingresar, avisaria a return y ese Hilo se pierde
 		
-			saldoSuficiente.await();
+			saldoSuficiente.await();  //Ponemos el hilo a la espera, el problema es que este metodo lanza un Exception del tipo Interrupted, asi que tenemos que tenemos que lanzar una declaracion, que nos la hace Eclipse
 			
 		}
 		
@@ -69,6 +69,8 @@ class Banco{
 		cuentas[cuentaDestino]+=cantidad;
 		
 		System.out.printf("El saldo total: %10.2f%n",getSaldoTotal());
+		
+		saldoSuficiente.signalAll(); //Despierta a todos los hilos que estan a la espera, para que no se queden bloqueados eternamente y por tanto todos los hilos realizan la transferencia cuando puedan
 		
 		}finally { //Si ocurre o no una excepcion, entonces libera el metodo cierreBanco
 			
